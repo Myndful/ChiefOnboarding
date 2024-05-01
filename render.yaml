@@ -8,7 +8,7 @@ services:
   - type: web
     name: chiefonboarding
     region: singapore
-    env: docker
+    runtime: docker
     dockerfilePath: ./back/Dockerfile
     envVars:
       - key: DATABASE_URL
