@@ -1,13 +1,13 @@
 databases:
   - name: chiefonboardingdb
-    region: frankfurt
+    region: singapore
     databaseName: chiefonboardingdb
     ipAllowList: []
 
 services:
   - type: web
     name: chiefonboarding
-    region: frankfurt
+    region: singapore
     env: docker
     dockerfilePath: ./back/Dockerfile
     envVars:
