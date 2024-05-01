@@ -1,19 +1,19 @@
 databases:
-  - name: chiefonboardingdb
+  - name: myndfulonboardingdb
     region: singapore
-    databaseName: chiefonboardingdb
+    databaseName: myndfulonboardingdb
     ipAllowList: []
 
 services:
   - type: web
-    name: chiefonboarding
+    name: myndfulonboarding
     region: singapore
     runtime: docker
     dockerfilePath: ./back/Dockerfile
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: chiefonboardingdb
+          name: myndfulonboardingdb
           property: connectionString
       - key: ALLOWED_HOSTS
         sync: false
